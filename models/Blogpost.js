@@ -14,16 +14,25 @@ Blogpost.init(
       primaryKey: true,
       autoIncrement: true
     },
-    userId: {
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    user_id: {
       type: DataTypes.INTEGER,
       refereneces: {
         model: 'user',
         key: 'id'
       }
     },
+    date_created: {
+      type: DataTypes.DATE,
+      allowNull: false,
+      defaultValue: DataTypes.NOW,
+    },
     content: {
       type: DataTypes.STRING,
-      notNull: false
+      allowNull: false
     }
   },
   {

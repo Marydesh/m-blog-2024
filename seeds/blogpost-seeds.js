@@ -2,8 +2,9 @@ const { Blogpost } = require('../models');
 
 const blogpostData = [
   {
-    userId: 1,
-    content: "This is the first blog post!"
+    user_id: 1,
+    content: "This is the first blog post!",
+    title:'New title'
   }
 ];
 

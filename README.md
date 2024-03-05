@@ -61,3 +61,52 @@ THEN I am signed out of the site
 
 WHEN I am idle on the site for more than a set time
 THEN I am able to view posts and comments but I am prompted to log in again before I can add, update, or delete posts
+
+
+
+# Tech Blog - Model-View-Controller (MVC) Challenge
+
+## Overview
+
+This project is about creating a website where people who work with technology can share their thoughts and experiences. It's similar to a blog, where users can write articles and comment on other people's posts. We're building it from scratch following a specific structure called Model-View-Controller (MVC). For making the website look good and function well, we're using technologies like Handlebars.js for creating pages, Sequelize for working with the database, and a tool called express-session to handle user logins.
+
+## What You Can Do
+
+### As a Developer Who Writes About Tech, You Can:
+
+- Share your ideas and opinions by writing articles and blog posts.
+- Read and comment on other developers' posts.
+
+## What the Website Can Do
+
+### Homepage:
+
+When you first go to the site, you'll see the homepage. It shows any existing blog posts and has links for going back to the homepage or to your personal dashboard. You'll also see a button to log in if you're not already logged in.
+
+### Navigation:
+
+You can move around the website by clicking on links. If you try to go to a page and you're not logged in, you'll be asked to sign up or log in.
+
+### User Authentication:
+
+If you're new to the site, you can sign up by creating a username and password. After signing up, you can log in and out whenever you want.
+
+### Dashboard:
+
+Once you're logged in, you'll see your personal dashboard. From here, you can manage your blog posts. You can create new ones, edit existing ones, or even delete them.
+
+### Blog Posts:
+
+You can read blog posts written by others. Each post shows the title, content, who wrote it, and when it was published. You can also leave comments on posts.
+
+### Session Management:
+
+If you're inactive on the site for too long, you'll be asked to log in again for security reasons.
+
+## Technologies We're Using
+
+- **Express.js**: Backend framework for Node.js.
+- **Handlebars.js**: Templating engine for generating HTML content.
+- **Sequelize**: Object-Relational Mapping (ORM) library for interacting with databases.
+- **express-session**: npm package for handling user authentication and session management.
+
