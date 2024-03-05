@@ -20,7 +20,7 @@ const sess = {
   secret: 'Super secret secret',
   cookie: {
     maxAge: 3000000,
-    httpOnly: true,
+    httpOnly: false,
     secure: false,
     sameSite: 'strict',
   },
@@ -60,7 +60,7 @@ app.use(routes);
 // };
 
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
+  app.listen(PORT, () => console.log('Now listening - http://localhost:3001'));
 }).catch((err)=>{
   console.log(`Failed connecting to database:`, err)
 })

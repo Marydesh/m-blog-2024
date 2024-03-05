@@ -13,6 +13,8 @@ const loginFormHandler = async (event) => {
       headers: { 'Content-Type': 'application/json' },
     });
 
+    console.log(response)
+
     if (response.ok) {
       // If successful, redirect the browser to the profile page
       // document.location.replace('/profile');
@@ -41,6 +43,8 @@ const signupFormHandler = async (event) => {
       // document.location.replace('/profile');
       location.href = "/profile"
     } else {
+      let err = await response.json()
+      console.log(err)
       alert(response.statusText);
     }
   }

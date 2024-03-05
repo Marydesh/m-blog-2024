@@ -25,6 +25,7 @@ Blogpost.init(
         key: 'id'
       }
     },
+    // No need for this if timestamps: true
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,

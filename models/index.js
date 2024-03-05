@@ -12,6 +12,9 @@ const User = require('./User');
 
 // Tags belongToMany Products (through ProductTag)
 
+User.hasMany(Blogpost)
+Blogpost.belongsTo(User)
+
 module.exports = {
   Blogpost,
   User,

@@ -9,7 +9,8 @@ router.get('/', async (req, res) => {
     const users = await User.findAll({})
     // console.log(blogposts)
     res.render('homepage', {
-        blogposts: blogposts.map(post => post.dataValues)
+        blogposts: blogposts.map(post => post.dataValues).reverse(),
+        logged_in: req.session.logged_in
     })
   } catch (err) {
     res.status(500).json(err);
@@ -29,7 +30,7 @@ router.get('/blogpost/:id', async (req, res) => {
 
     const blogpost = blogpostData.get({ plain: true });
 
-    res.render('project', {
+    res.render('blogpost', {
       ...blogpost,
       logged_in: req.session.logged_in
     });
