@@ -1,6 +1,9 @@
 
-# Tech Blog - Model-View-Controller (MVC) Challenge
+# Tech Blog - Model-View-Controller (MVC) Challenge - https://m-blog-2024.onrender.com
 
+![Screenshot](https://github.com/Marydesh/m-blog-2024/blob/main/s_1.png?raw=true)
+![Screenshot](https://github.com/Marydesh/m-blog-2024/blob/main/profile.png?raw=true)
+![Screenshot](https://github.com/Marydesh/m-blog-2024/blob/main/login.png?raw=true)
 ## Overview
 
 This project is a website where people can share their thoughts and experiences. It's similar to a blog, where users can write articles and comment on other people's posts. I am building it from scratch following a Model-View-Controller (MVC) structure. For making the website look good and function well, I am using using technologies like Handlebars.js for creating pages, Sequelize for working with the database, and a express-session to handle user logins.
